@@ -1,13 +1,13 @@
 version: '3'
 services:
   web:
-    image: php:7-apache
+    image: drupaldocker/php:7.2-apache
     volumes:
-      - ./docroot:/var/www/html
+      - ./docroot:/var/www/html:cached
     ports:
       - "80:80"
   db:
-    image: mysql:5.7
+    image: mysql:5.5
     volumes:
       - ./db-backups:/var/mysql/backups:delegated
     environment:
