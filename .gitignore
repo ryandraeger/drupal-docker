@@ -8,3 +8,7 @@ db-backups/*.zip
 # ignore core drupal directories
 docroot/core/*
 docroot/vendor/*
+
+# ignore drupal files with sensitive info
+docroot/sites/default/settings.local.php
+docroot/sites/default/settings.php
