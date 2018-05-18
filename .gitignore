@@ -7,3 +7,4 @@ db-backups/*.zip
 
 # ignore core drupal directories
 docroot/core/*
+docroot/vendor/*
