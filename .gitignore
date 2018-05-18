@@ -1,2 +1,9 @@
-# ignore all sql files
-*.sql
+# ignore common db dump files
+db-backups/*.mysql
+db-backups/*.sql
+db-backups/*.gz
+db-backups/*.xz
+db-backups/*.zip
+
+# ignore core drupal directories
+docroot/core/*
