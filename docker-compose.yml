@@ -4,26 +4,21 @@ services:
     image: drupaldocker/php:7.2-apache
     volumes:
       - ./docroot:/var/www/html:cached
+    env_file:
+      - ./docker.env  
     ports:
       - "80:80"
   db:
     image: mysql:5.5
     volumes:
       - ./db-backups:/var/mysql/backups:delegated
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: drupaldb
-      MYSQL_USER: drupal
-      MYSQL_PASSWORD: mypassword
+    env_file:
+      - ./docker.env
     ports:
       - "3306:3306"
   pma:
     image: phpmyadmin/phpmyadmin
-    environment:
-      PMA_HOST: db
-      PMA_USER: root
-      PMA_PASSWORD: root
-      PHP_UPLOAD_MAX_FILESIZE: 1G
-      PHP_MAX_INPUT_VARS: 1G
+    env_file:
+      - ./docker.env
     ports:
       - "8001:80"
