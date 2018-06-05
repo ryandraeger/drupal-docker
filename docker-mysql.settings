@@ -1,5 +1,0 @@
-#Database settings
-MYSQL_ROOT_PASSWORD=root
-MYSQL_DATABASE=drupaldb
-MYSQL_USER=drupal
-MYSQL_PASSWORD=mypassword
