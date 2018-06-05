@@ -1,0 +1,36 @@
+global-css:
+  version: 1.0
+  css:
+    theme:
+      vendor/bootstrap/bootstrap.min.css: {}
+      vendor/icon-awesome/css/font-awesome.min.css: {}
+      vendor/icon-line-pro/style.css: {}
+      vendor/icon-hs/style.css: {}
+      vendor/animate.css: {}
+      vendor/dzsparallaxer/dzsparallaxer.css: {}
+      vendor/dzsparallaxer/dzsscroller/scroller.css: {}
+      vendor/dzsparallaxer/advancedscroller/plugin.css: {}
+      vendor/slick-carousel/slick/slick.css: {}
+      vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css: {}
+      vendor/hs-bg-video/hs-bg-video.css: {}
+      vendor/fancybox/jquery.fancybox.css: {}
+      vendor/hs-megamenu/src/hs.megamenu.css: {}
+      vendor/hamburgers/hamburgers.min.css: {}
+      css/unify.css: {}
+      css/custom.css: {}
+open-sans:
+  license:
+    name: SIL Open Font License 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700: { type: external }
+global-js:
+  version: 1.0
+  js:
+    vendor/slick-carousel/slick/slick.js: {}
+    js/hs.core.js: {}
+    js/components/hs.carousel.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery

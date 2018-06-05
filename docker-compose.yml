@@ -5,7 +5,7 @@ services:
     volumes:
       - ./docroot:/var/www/html:cached
     env_file:
-      - ./docker.env  
+      - ./docker.env
     ports:
       - "80:80"
   db:

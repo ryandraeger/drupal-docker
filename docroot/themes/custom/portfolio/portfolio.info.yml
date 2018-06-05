@@ -1,0 +1,17 @@
+name: Portfolio
+type: theme
+description: 'My portfolio site.'
+screenshot: screenshot.png
+core: 8.x
+base theme: classy
+regions:
+  navigation: Navigation
+  promo: Promo
+  content: Content
+  portfolio: Portfolio
+  video: Video
+  footer: Footer
+libraries: 
+  - portfolio/global-css
+  - portfolio/open-sans
+  - portfolio/global-js
